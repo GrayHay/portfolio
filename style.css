@@ -1,0 +1,115 @@
+:root {
+    --gray: rgb(57, 58, 78);
+    --light-gray: rgb(143, 143, 143);
+    --green: rgb(97, 238, 139);
+  }
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    background-color: #171717;
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+    @media only screen and (min-width: 600px) {margin: 0px 25% 0px 25%;};
+    margin: 0px 2% 0px 2%;
+    cursor: default;
+}
+h4 {
+    color: var(--light-gray);
+    padding: 0 0 10px 5px;
+    text-shadow: 0px 0px 15px var(--light-gray);
+    font-size: 1.875rem;
+}
+
+.project h2 {
+    color: var(--green);
+    margin: 0 0 10px 0px;
+    padding: 2px 10px 2px 10px;
+    background-color: var(--gray);
+    border-radius: 0 10px 10px 0;
+}
+h2 {
+    color: var(--light-gray);
+}
+.info-full-round {
+    text-align: left;
+    background-color: var(--gray);
+    color: var(--green);
+    margin: 5px 0px 5px 0px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.info {
+    text-align: left;
+    background-color: var(--gray);
+    color: var(--green);
+    margin: 5px 0px 5px 0px;
+    padding: 5px;
+    border-radius: 2px 2px 10px 10px;
+}
+.divider {
+    margin-top: 50px;
+}
+.half-divider {
+    margin-top: 25px;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-shadow: 0px 0px 15px black;
+}
+.title img {
+    width: 150px;
+    position: absolute;
+    z-index: -1;
+    left: 50px;
+    padding-top: 15px;
+}
+
+button:hover {
+    background-color: var(--gray);
+    color: white;
+    transition: 500ms;
+}
+
+button {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font: inherit;
+    transition: 500ms;
+}
+.more {
+    display: flex;
+    justify-content: center;
+}
+
+.left-side {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font: inherit;
+}
+.back {
+    display: flex;
+}
+
+/* ---------PROJECTS--------- */
+.project {
+    position: relative;
+}
+.project h2 {
+    position: absolute;
+    bottom: 0;
+}
+.project img {
+    width: 100%;
+    z-index: 0;
+    border-radius: 10px 10px 2px 2px;
+}
